@@ -4,10 +4,10 @@
 
 echo "Please enter the username: "
 
-read USERNAME
+read -s USERNAME
 
 echo "Enter the password : "
 
-read PASSWORD
+read -s PASSWORD
 
 echo "login id is : $USERNAME, & password is : $PASSWORD"
