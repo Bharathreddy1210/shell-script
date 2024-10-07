@@ -23,7 +23,7 @@ then
     echo -e $R "Please run this script as root user"
     exit 1
 else 
-    echo "you are super user"
+    echo -e $G "you are super user"
 fi
 
 dnf install mysql -y &>>$LOGFILE
