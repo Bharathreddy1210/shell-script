@@ -7,6 +7,7 @@ LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
+N="\e[0m"
 
 VALIDATE(){
    if [ $? -ne 0 ]
@@ -23,7 +24,7 @@ then
     echo -e $R "Please run this script as root user"
     exit 1
 else 
-    echo -e $G "you are super user"
+    echo -e $G "you are super user" $N
 fi
 
 dnf install mysql -y &>>$LOGFILE
